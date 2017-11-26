@@ -1,0 +1,112 @@
+/*
+* @Author: liqi
+* @Date:   2017-11-18 01:51:23
+* @Last Modified by:   liqi
+* @Last Modified time: 2017-11-18 01:55:21
+*/
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	animation: change  5s  ease-in-out;
+	border-radius: 50%; 
+}
+/* .top{
+	width: 30%;
+	height:100%;
+	background: rgba(0, 0, 0, 0.5);
+	float: left;
+} */
+.center{
+	width:100%;
+	height: 100%;
+	float:left;
+	background: url('../img/psds34723.jpg');
+	opacity: 0.9;
+}
+.top{
+	width: 100%;
+	height: 300px;
+	padding-top: 100px;
+	background: url('../img/timg6NBELHW5.jpg');
+	text-align: center;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.liqi {
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	 top: 0;
+	 left: 0;
+	 background: rgba(0, 0, 0, 0.5); 
+}
+.liqi img{
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	width: 200px ;
+	height: 200px;
+	transition: all 2s;
+	border-radius: 50%;
+}
+.liqi:hover img{
+	transform: rotateY(360deg);
+}
+@keyframes change{
+	0%{
+		width: 0%;
+		height: 5%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: 0 auto;
+		transform: rotate(3turn);
+	}
+	25%{
+		width: 25%;
+		height: 25%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: 0 auto;
+		transform: rotate(3turn);
+	}
+	50%{
+		width: 50%;
+		height: 50%;
+	}
+	75%{
+		width: 50%;
+		height: 50%;
+		transform: scale(1.3, 0.8);
+	}
+	100%{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: 0 auto;
+	}	
+} 
